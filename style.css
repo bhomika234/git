@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff5a5f;
+    padding: 10px 20px;
+    color: white;
+}
+
+header .log img {
+    height: 50px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #ffd700;
+}
+
+/* Main Content Styles */
+main {
+    text-align: center;
+    padding:  50px ;
+    background: url(png\ 9.jpg) no-repeat center/cover;
+    min-height: 80vh;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    animation: fadeIn 2s ease;
+}
+
+main p {
+    font-size: 24px;
+    margin: 20px 0;
+    color: black;
+}
+
+main input {
+    width: 60%;
+    max-width: 500px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+main input:focus {
+    border-color: #ff5a5f;
+    outline: none;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #0e3d35;
+    color: #fff;
+    margin-top: 40px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.info {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.info h2 {
+    font-size: 2rem;
+    color: #ff5a5f;
+    margin-bottom: 15px;
+}
+
+.info p {
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.main-feature {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.feature {
+    background-color: #ff5a5f;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 280px;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature h3 {
+    color: #ff5a5f;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #444;
+}
